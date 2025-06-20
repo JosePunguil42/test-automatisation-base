@@ -5,8 +5,8 @@ class KarateBasicTest {
         System.setProperty("karate.ssl", "true");
     }
     @Karate.Test
-    Karate testBasic() {
-        return Karate.run("classpath:karate-test.feature");
+    Karate testMarvelApi() {
+        return Karate.run("classpath:com/pichincha/features/marvel_characters_api/marvelCharactersApi.feature");
     }
 
 }
